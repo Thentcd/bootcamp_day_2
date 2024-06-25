@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "dzien_drugi_backend": {
+      "candid": "src/dzien_drugi_backend/dzien_drugi_backend.did",
+      "package": "dzien_drugi_backend",
+      "type": "rust"
+    },
+    "dzien_drugi_frontend": {
+      "dependencies": [
+        "dzien_drugi_backend"
+      ],
+      "source": [
+        "src/dzien_drugi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dzien_drugi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

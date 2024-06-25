@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/dzien_drugi_backend"
+]
+resolver = "2"
