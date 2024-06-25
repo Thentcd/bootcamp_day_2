@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import { dzien_drugi_backend } from 'declarations/dzien_drugi_backend/index';
+import Blog from './components/Blog.vue';
 let greeting = ref('');
 
 async function handleSubmit(e) {
@@ -26,5 +27,6 @@ async function handleSubmit(e) {
       <button type="submit">Greet Me!</button>
     </form>
     <section id="greeting">{{ greeting }}</section>
+    <Blog />
   </main>
 </template>
