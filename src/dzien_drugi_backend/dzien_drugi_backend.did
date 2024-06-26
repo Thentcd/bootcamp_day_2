@@ -2,4 +2,6 @@ service : {
     "greet": (text, text) -> (text) query;
     "add_post": (text) -> ();
     "read_posts": () -> (vec text) query;
+    "remove_post": (nat64) -> ();
+    "edit_post": (nat64, text) -> (); 
 }
